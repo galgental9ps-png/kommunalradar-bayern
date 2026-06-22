@@ -1,0 +1,73 @@
+{
+  "appName": "KommunalRadar Bayern",
+  "subtitle": "Wichtige Entwicklungen für Kommunalverwaltung, Haushalt und Finanzen in Bayern.",
+  "generatedAt": "2026-06-22T08:00:00.000Z",
+  "disclaimer": "Automatische Vorbewertung öffentlicher Quellen. Keine Rechtsberatung und keine Verwaltungsentscheidung. Originalquelle und fachliche Zuständigkeit immer prüfen.",
+  "stats": {
+    "total": 2,
+    "urgent": 1,
+    "high": 1,
+    "sourcesChecked": 29,
+    "sourcesWithErrors": 0
+  },
+  "categoryCounts": {
+    "Sofort wichtig": 1,
+    "Kommunalrecht": 0,
+    "Haushalt & Finanzen": 1,
+    "Förderprogramme": 0,
+    "Steuern & Abgaben": 0,
+    "Vergabe": 0,
+    "Personal & Tarif": 0,
+    "Digitalisierung / BayernPortal / OZG": 0,
+    "Bauen & Planung": 0,
+    "Klima / Energie": 1,
+    "Schule / Kita": 0,
+    "Soziales": 0,
+    "Sicherheit & Ordnung": 0,
+    "Datenschutz": 0,
+    "Rechtsprechung": 0,
+    "Landtag / Gesetze": 0,
+    "Ministerien / Rundschreiben": 0
+  },
+  "items": [
+    {
+      "id": "sample-finanzausgleich",
+      "title": "Änderung bei kommunalem Finanzausgleich Bayern",
+      "source": "Beispielmeldung",
+      "sourceId": "sample",
+      "sourceUrl": "#",
+      "url": "#",
+      "date": "2026-06-22T08:00:00.000Z",
+      "category": "Haushalt & Finanzen",
+      "priority": "Sofort wichtig",
+      "score": 82,
+      "relevance": "Sehr hoch",
+      "shortSummary": "Eine Änderung beim kommunalen Finanzausgleich kann Schlüsselzuweisungen, Umlagen und Finanzplanungsjahre beeinflussen.",
+      "whyImportant": "Kann Schlüsselzuweisungen, Kreisumlage, Investitionsplanung oder Haushaltsausgleich betreffen.",
+      "affectedUnits": ["Kämmerei", "Geschäftsleitung", "Bürgermeister", "Gemeinderat/Stadtrat"],
+      "possibleImpacts": ["Haushalt/Finanzplanung", "Gremienvorbereitung"],
+      "nextStep": "Auswirkungen auf Haushaltsplanung und Finanzplanungsjahre prüfen.",
+      "tags": ["Haushalt & Finanzen", "Finanzausgleich"]
+    },
+    {
+      "id": "sample-warmeplanung",
+      "title": "Neue Hinweise zur kommunalen Wärmeplanung in Bayern",
+      "source": "Beispielmeldung",
+      "sourceId": "sample",
+      "sourceUrl": "#",
+      "url": "#",
+      "date": "2026-06-22T08:00:00.000Z",
+      "category": "Klima / Energie",
+      "priority": "Hoch",
+      "score": 68,
+      "relevance": "Hoch",
+      "shortSummary": "Hinweise zur kommunalen Wärmeplanung können Planung, Förderung, Bürgerinformation und Haushaltsansätze betreffen.",
+      "whyImportant": "Kann Städte und Gemeinden bei Planung, Förderanträgen, Bürgerinformation und Haushaltsplanung betreffen.",
+      "affectedUnits": ["Bauamt", "Kämmerei", "Geschäftsleitung", "Gemeinderat/Stadtrat"],
+      "possibleImpacts": ["Planung/Bau/Projektsteuerung", "Haushalt/Finanzplanung", "Fristen/Antragsverfahren"],
+      "nextStep": "Prüfen, ob die Kommune betroffen ist, ob Fristen bestehen und ob Mittel im Haushalt eingeplant werden müssen.",
+      "tags": ["Klima / Energie", "Wärmeplanung", "Förderung"]
+    }
+  ],
+  "sourceErrors": []
+}
