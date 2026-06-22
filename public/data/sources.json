@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "appName": "KommunalRadar Bayern",
+    "subtitle": "Täglicher Verwaltungs-, Vorschriften-, Finanz-, Beamtenrechts- und Ausbildungsmonitor für die bayerische Kommunalverwaltung.",
+    "version": "0.2.0",
+    "notes": "Automatische fachliche Vorbewertung öffentlicher Quellen. Keine Rechtsberatung, keine Verwaltungsentscheidung und kein Ersatz für Prüfung der Originalquelle. Besonders relevante Bereiche: Verwaltungsvorschriften Bayern, Kommunalrecht, Haushalt/Finanzen, Beamtenrecht, BVS/Ausbildung, Fristen, Rechtsprechung und kommunale Pflichtaufgaben."
+  },
+  "allowedDomains": [
+    "bayern.de",
+    "freistaat.bayern",
+    "stmi.bayern.de",
+    "stmfh.bayern.de",
+    "stmd.bayern.de",
+    "stmb.bayern.de",
+    "stmas.bayern.de",
+    "stmuv.bayern.de",
+    "statistik.bayern.de",
+    "verkuendung-bayern.de",
+    "gesetze-bayern.de",
+    "bayern.landtag.de",
+    "datenschutz-bayern.de",
+    "lda.bayern.de",
+    "lff.bayern.de",
+    "oeffentlicher-dienst.bayern.de",
+    "bvs.de",
+    "bkpv.de",
+    "bay-gemeindetag.de",
+    "bay-staedtetag.de",
+    "bay-landkreistag.de",
+    "bay-bezirketag.de",
+    "bayernportal.de",
+    "vergabe.bayern.de",
+    "foerderdatenbank.de",
+    "gesetze-im-internet.de",
+    "recht.bund.de",
+    "bundesfinanzministerium.de",
+    "bmi.bund.de",
+    "destatis.de",
+    "vka.de"
+  ],
+  "sources": [
+    {
+      "id": "baymbl-rss",
+      "name": "Bayerisches Ministerialblatt",
+      "group": "Verwaltungsvorschriften Bayern",
+      "type": "rss",
+      "url": "https://www.verkuendung-bayern.de/service/rss-feed/baymbl-rss/list/",
+      "weight": 34,
+      "categoryHint": "Verwaltungsvorschriften",
+      "tags": ["BayMBl.", "Bekanntmachung", "Verwaltungsvorschriften", "Richtlinie", "Vollzug", "Fristen"]
+    },
+    {
+      "id": "gvbl-rss",
+      "name": "Bayerisches Gesetz- und Verordnungsblatt",
+      "group": "Gesetze und Verordnungen Bayern",
+      "type": "rss",
+      "url": "https://www.verkuendung-bayern.de/service/rss-feed/gvbl-rss/list/",
+      "weight": 32,
+      "categoryHint": "Landtag / Gesetze",
+      "tags": ["GVBl.", "Gesetz", "Verordnung", "BayGO", "BayBO", "BayBG", "BayBesG"]
+    },
+    {
+      "id": "baymbl-html",
+      "name": "BayMBl. Veröffentlichungen",
+      "group": "Verwaltungsvorschriften Bayern",
+      "type": "html",
+      "url": "https://www.verkuendung-bayern.de/baymbl/",
+      "weight": 30,
+      "categoryHint": "Verwaltungsvorschriften",
+      "tags": ["Bekanntmachung", "Vollzugshinweise", "Förderrichtlinie", "Haushalt", "Personal"]
+    },
+    {
+      "id": "bayernrecht-start",
+      "name": "BAYERN.RECHT – Vorschriften und Rechtsprechung",
+      "group": "Recht Bayern",
+      "type": "html",
+      "url": "https://www.gesetze-bayern.de/",
+      "weight": 24,
+      "categoryHint": "Rechtsprechung",
+      "tags": ["Gesetze", "Verwaltungsvorschriften", "Gerichtsentscheidungen", "Bayern.Recht"]
+    },
+    {
+      "id": "baybg-reference",
+      "name": "Bayerisches Beamtengesetz (BayBG)",
+      "group": "Beamtenrecht Bayern",
+      "type": "reference",
+      "url": "https://www.gesetze-bayern.de/Content/Document/BayBG",
+      "weight": 27,
+      "categoryHint": "Beamtenrecht",
+      "title": "Bayerisches Beamtengesetz (BayBG) als Grundnorm für bayerische Beamte prüfen",
+      "description": "Zentrale Grundlage für Status, Rechte und Pflichten bayerischer Beamter; für kommunale Personalverwaltung und Dienstvorgesetzte relevant.",
+      "tags": ["BayBG", "Beamtenrecht", "Dienstpflichten", "Personalamt"]
+    },
+    {
+      "id": "llbg-reference",
+      "name": "Leistungslaufbahngesetz (LlbG)",
+      "group": "Beamtenrecht Bayern",
+      "type": "reference",
+      "url": "https://www.gesetze-bayern.de/Content/Document/BayLlbG",
+      "weight": 25,
+      "categoryHint": "Beamtenrecht",
+      "title": "Laufbahnrecht Bayern: Qualifikation, Probezeit, Beurteilung und Aufstieg beobachten",
+      "description": "Wichtig für Personalamt, Nachwuchsgewinnung, Beamtenlaufbahn, Qualifikationsebenen und Fortkommen im öffentlichen Dienst.",
+      "tags": ["LlbG", "Laufbahn", "QE2", "QE3", "Beurteilung", "Beamtenrecht"]
+    },
+    {
+      "id": "baybesg-reference",
+      "name": "Bayerisches Besoldungsgesetz (BayBesG)",
+      "group": "Beamtenrecht Bayern",
+      "type": "reference",
+      "url": "https://www.gesetze-bayern.de/Content/Document/BayBesG",
+      "weight": 26,
+      "categoryHint": "Beamtenrecht",
+      "title": "Besoldung Bayern: Änderungen bei Besoldung, Zulagen oder Tabellen prüfen",
+      "description": "Relevanz für Beamte, Personalamt, Haushaltsplanung und Stellenbewertung; Änderungen können finanzielle Auswirkungen haben.",
+      "tags": ["BayBesG", "Besoldung", "Beamte", "Personalamt", "Haushalt"]
+    },
+    {
+      "id": "baybhv-reference",
+      "name": "Bayerische Beihilfeverordnung (BayBhV)",
+      "group": "Beamtenrecht Bayern",
+      "type": "reference",
+      "url": "https://www.gesetze-bayern.de/Content/Document/BayBhV",
+      "weight": 23,
+      "categoryHint": "Beamtenrecht",
+      "title": "Beihilfe Bayern: Änderungen bei Beihilfevorschriften und Verfahren beobachten",
+      "description": "Relevant für Beamte, Versorgungsempfänger und Personalstellen; kann Informationspflichten oder interne Hinweise auslösen.",
+      "tags": ["Beihilfe", "BayBhV", "Beamte", "Personalamt"]
+    },
+    {
+      "id": "lff-beamte",
+      "name": "Landesamt für Finanzen – Bezüge und Beihilfe",
+      "group": "Beamtenrecht Bayern",
+      "type": "html",
+      "url": "https://www.lff.bayern.de/",
+      "weight": 21,
+      "categoryHint": "Beamtenrecht",
+      "tags": ["Bezüge", "Beihilfe", "Besoldung", "Versorgung", "Beamte", "Reisekosten"]
+    },
+    {
+      "id": "bvs-start",
+      "name": "Bayerische Verwaltungsschule",
+      "group": "Ausbildung / BVS",
+      "type": "html",
+      "url": "https://www.bvs.de/",
+      "weight": 28,
+      "categoryHint": "Ausbildung / BVS",
+      "tags": ["BVS", "Ausbildung", "Verwaltungsfachangestellte", "BL I", "BL II", "Prüfung", "Verwaltungsfachwirt"]
+    },
+    {
+      "id": "bvs-ausbildung",
+      "name": "BVS – Ausbildung und Prüfungen",
+      "group": "Ausbildung / BVS",
+      "type": "html",
+      "url": "https://www.bvs.de/ausbildung/",
+      "weight": 28,
+      "categoryHint": "Ausbildung / BVS",
+      "tags": ["Ausbildung", "Prüfung", "VFA-K", "Verwaltungsfachangestellte", "Stoffplan", "Lehrgang"]
+    },
+    {
+      "id": "stmi-presse",
+      "name": "Bayerisches Innenministerium – Pressemitteilungen",
+      "group": "Ministerien Bayern",
+      "type": "rss",
+      "url": "https://www.stmi.bayern.de/news/rss/pressemitteilungen?type=9818",
+      "weight": 20,
+      "categoryHint": "Kommunalrecht",
+      "tags": ["Kommunalrecht", "Sicherheit", "Ordnung", "Vergabe", "Feuerwehr"]
+    },
+    {
+      "id": "stmi-aktuell",
+      "name": "Bayerisches Innenministerium – Aktuelle Meldungen",
+      "group": "Ministerien Bayern",
+      "type": "rss",
+      "url": "https://www.stmi.bayern.de/news/rss/aktuelle-meldungen?type=9818",
+      "weight": 18,
+      "categoryHint": "Sicherheit & Ordnung",
+      "tags": ["Kommunalrecht", "Katastrophenschutz", "Feuerwehr", "Ordnung", "Kommunen"]
+    },
+    {
+      "id": "stmi-kommunale-vergaben",
+      "name": "Bayerisches Innenministerium – Kommunale Vergaben",
+      "group": "Vergabe",
+      "type": "rss",
+      "url": "https://www.stmi.bayern.de/kommunale-vergaben?type=9818",
+      "weight": 24,
+      "categoryHint": "Vergabe",
+      "tags": ["Vergabe", "Beschaffung", "Kommunale Auftragsvergabe", "Schwellenwerte"]
+    },
+    {
+      "id": "stmfh-presse",
+      "name": "Bayerisches Finanzministerium – Pressemitteilungen",
+      "group": "Ministerien Bayern",
+      "type": "html",
+      "url": "https://www.stmfh.bayern.de/aktuelles/pressemitteilungen/",
+      "weight": 22,
+      "categoryHint": "Haushalt & Finanzen",
+      "tags": ["Finanzen", "Steuern", "Kommunaler Finanzausgleich", "Öffentlicher Dienst", "Beamtenrecht"]
+    },
+    {
+      "id": "stmd-presse",
+      "name": "Bayerisches Digitalministerium – Pressemitteilungen",
+      "group": "Ministerien Bayern",
+      "type": "html",
+      "url": "https://www.stmd.bayern.de/aktuelles/pressemitteilungen/",
+      "weight": 17,
+      "categoryHint": "Digitalisierung / BayernPortal / OZG",
+      "tags": ["Digitalisierung", "OZG", "BayernPortal", "Registermodernisierung"]
+    },
+    {
+      "id": "stmb-presse",
+      "name": "Bayerisches Bauministerium – Pressemitteilungen",
+      "group": "Ministerien Bayern",
+      "type": "html",
+      "url": "https://www.stmb.bayern.de/med/pressemitteilungen/",
+      "weight": 17,
+      "categoryHint": "Bauen & Planung",
+      "tags": ["Bau", "Planung", "Wohnraum", "Städtebauförderung", "BayBO"]
+    },
+    {
+      "id": "stmas-presse",
+      "name": "Bayerisches Sozialministerium – Pressemitteilungen",
+      "group": "Ministerien Bayern",
+      "type": "html",
+      "url": "https://www.stmas.bayern.de/presse/",
+      "weight": 15,
+      "categoryHint": "Soziales",
+      "tags": ["Soziales", "Kita", "Personal", "Arbeit"]
+    },
+    {
+      "id": "stmuv-presse",
+      "name": "Bayerisches Umweltministerium – Pressemitteilungen",
+      "group": "Ministerien Bayern",
+      "type": "html",
+      "url": "https://www.stmuv.bayern.de/aktuell/presse/index.htm",
+      "weight": 15,
+      "categoryHint": "Klima / Energie",
+      "tags": ["Klima", "Energie", "Umwelt", "Wasser", "Abfall"]
+    },
+    {
+      "id": "lfstat",
+      "name": "Bayerisches Landesamt für Statistik – Pressemitteilungen",
+      "group": "Daten & Statistik",
+      "type": "html",
+      "url": "https://www.statistik.bayern.de/presse/mitteilungen/",
+      "weight": 13,
+      "categoryHint": "Haushalt & Finanzen",
+      "tags": ["Statistik", "Kommunalfinanzen", "Bevölkerung", "Steuern"]
+    },
+    {
+      "id": "bkpv",
+      "name": "Bayerischer Kommunaler Prüfungsverband",
+      "group": "Kommunale Fachquellen",
+      "type": "html",
+      "url": "https://www.bkpv.de/veroeffentlichungen",
+      "weight": 26,
+      "categoryHint": "Haushalt & Finanzen",
+      "tags": ["Prüfung", "Haushalt", "Kasse", "Gebühren", "Kommunalunternehmen", "Verwaltungsvorschriften"]
+    },
+    {
+      "id": "gemeindetag-aktuell",
+      "name": "Bayerischer Gemeindetag – Aktuelles",
+      "group": "Kommunale Spitzenverbände",
+      "type": "html",
+      "url": "https://www.bay-gemeindetag.de/aktuelles",
+      "weight": 24,
+      "categoryHint": "Kommunalrecht",
+      "tags": ["Gemeinden", "Märkte", "Kommunalpolitik", "Satzung", "Haushalt", "Personal"]
+    },
+    {
+      "id": "staedtetag",
+      "name": "Bayerischer Städtetag – Presse und Veröffentlichungen",
+      "group": "Kommunale Spitzenverbände",
+      "type": "html",
+      "url": "https://www.bay-staedtetag.de/presse-und-veroeffentlichungen/pressemitteilungen/downloadbereich",
+      "weight": 22,
+      "categoryHint": "Kommunalrecht",
+      "tags": ["Städte", "Gemeinden", "Finanzen", "Personal", "Daseinsvorsorge"]
+    },
+    {
+      "id": "landkreistag",
+      "name": "Bayerischer Landkreistag – Aktuelle Meldungen",
+      "group": "Kommunale Spitzenverbände",
+      "type": "html",
+      "url": "https://www.bay-landkreistag.de/aktuelles/aktuelle-meldungen/",
+      "weight": 22,
+      "categoryHint": "Kommunalrecht",
+      "tags": ["Landkreise", "Kreisumlage", "Soziales", "Krankenhäuser", "ÖPNV"]
+    },
+    {
+      "id": "bezirketag",
+      "name": "Bayerischer Bezirketag – Aktuelles",
+      "group": "Kommunale Spitzenverbände",
+      "type": "html",
+      "url": "https://www.bay-bezirketag.de/aktuelles/",
+      "weight": 12,
+      "categoryHint": "Soziales",
+      "tags": ["Bezirke", "Eingliederungshilfe", "Bezirksumlage", "Soziales"]
+    },
+    {
+      "id": "bayernportal",
+      "name": "BayernPortal",
+      "group": "Digitalisierung",
+      "type": "html",
+      "url": "https://www.bayernportal.de/",
+      "weight": 13,
+      "categoryHint": "Digitalisierung / BayernPortal / OZG",
+      "tags": ["Online-Dienste", "BayernID", "BayernPortal", "Behördenwegweiser"]
+    },
+    {
+      "id": "vergabe-bayern",
+      "name": "Vergabeplattform Bayern – Veröffentlichungen",
+      "group": "Vergabe",
+      "type": "html",
+      "url": "https://www.vergabe.bayern.de/veroeffentlichungen/index.html",
+      "weight": 18,
+      "categoryHint": "Vergabe",
+      "tags": ["Vergabe", "Ausschreibung", "VOB", "UVgO"]
+    },
+    {
+      "id": "baylfd-rss",
+      "name": "Bayerischer Landesbeauftragter für den Datenschutz",
+      "group": "Datenschutz",
+      "type": "html",
+      "url": "https://www.datenschutz-bayern.de/static/rss.html",
+      "weight": 18,
+      "categoryHint": "Datenschutz",
+      "tags": ["Datenschutz", "Behörde", "Kommune", "DSGVO"]
+    },
+    {
+      "id": "lda-bayern",
+      "name": "Bayerisches Landesamt für Datenschutzaufsicht",
+      "group": "Datenschutz",
+      "type": "html",
+      "url": "https://www.lda.bayern.de/de/thema.html",
+      "weight": 16,
+      "categoryHint": "Datenschutz",
+      "tags": ["Datenschutz", "DSGVO", "Aufsicht", "Informationssicherheit"]
+    },
+    {
+      "id": "foerderdatenbank-bayern",
+      "name": "Förderdatenbank Bund – Bayern",
+      "group": "Förderprogramme",
+      "type": "html",
+      "url": "https://www.foerderdatenbank.de/FDB/DE/Foerderprogramme/foerderprogramme.html",
+      "weight": 16,
+      "categoryHint": "Förderprogramme",
+      "tags": ["Förderung", "Zuwendung", "Frist", "Kommune"]
+    },
+    {
+      "id": "vka",
+      "name": "VKA – Tarifinformationen kommunale Arbeitgeber",
+      "group": "Personal & Tarif",
+      "type": "html",
+      "url": "https://www.vka.de/",
+      "weight": 14,
+      "categoryHint": "Personal & Tarif",
+      "tags": ["TVöD", "Tarif", "Personal", "Kommunale Arbeitgeber"]
+    },
+    {
+      "id": "destatis-kommunal",
+      "name": "Destatis – Öffentliche Finanzen und Personal",
+      "group": "Daten & Statistik",
+      "type": "html",
+      "url": "https://www.destatis.de/DE/Themen/Staat/Oeffentliche-Finanzen/_inhalt.html",
+      "weight": 10,
+      "categoryHint": "Haushalt & Finanzen",
+      "tags": ["Statistik", "Finanzen", "Personal", "Kommunen"]
+    }
+  ]
+}
