@@ -1,0 +1,339 @@
+{
+  "meta": {
+    "appName": "KommunalRadar Bayern",
+    "subtitle": "Wichtige Entwicklungen für Kommunalverwaltung, Haushalt und Finanzen in Bayern.",
+    "version": "0.1.0",
+    "notes": "Nur öffentliche Quellen. Keine privaten Daten, keine Logins, keine Verwaltungsentscheidungen. Jede Meldung ist als Arbeitshinweis zu verstehen und fachlich zu prüfen."
+  },
+  "allowedDomains": [
+    "bayern.de",
+    "stmi.bayern.de",
+    "stmfh.bayern.de",
+    "stmd.bayern.de",
+    "stmb.bayern.de",
+    "stmas.bayern.de",
+    "stmuv.bayern.de",
+    "statistik.bayern.de",
+    "verkuendung-bayern.de",
+    "gesetze-bayern.de",
+    "bayern.landtag.de",
+    "datenschutz-bayern.de",
+    "lda.bayern.de",
+    "bkpv.de",
+    "bay-gemeindetag.de",
+    "bay-staedtetag.de",
+    "bay-landkreistag.de",
+    "bay-bezirketag.de",
+    "bayernportal.de",
+    "vergabe.bayern.de",
+    "foerderdatenbank.de",
+    "gesetze-im-internet.de",
+    "recht.bund.de",
+    "bundesfinanzministerium.de",
+    "bmi.bund.de",
+    "destatis.de",
+    "vka.de"
+  ],
+  "sources": [
+    {
+      "id": "stmi-presse",
+      "name": "Bayerisches Innenministerium – Pressemitteilungen",
+      "group": "Ministerien Bayern",
+      "type": "rss",
+      "url": "https://www.stmi.bayern.de/news/rss/pressemitteilungen?type=9818",
+      "weight": 18,
+      "categoryHint": "Kommunalrecht",
+      "tags": ["Kommunalrecht", "Sicherheit", "Ordnung", "Vergabe"]
+    },
+    {
+      "id": "stmi-aktuell",
+      "name": "Bayerisches Innenministerium – Aktuelle Meldungen",
+      "group": "Ministerien Bayern",
+      "type": "rss",
+      "url": "https://www.stmi.bayern.de/news/rss/aktuelle-meldungen?type=9818",
+      "weight": 16,
+      "categoryHint": "Sicherheit & Ordnung",
+      "tags": ["Kommunalrecht", "Katastrophenschutz", "Feuerwehr", "Ordnung"]
+    },
+    {
+      "id": "stmi-kommunale-vergaben",
+      "name": "Bayerisches Innenministerium – Kommunale Vergaben",
+      "group": "Vergabe",
+      "type": "rss",
+      "url": "https://www.stmi.bayern.de/kommunale-vergaben?type=9818",
+      "weight": 22,
+      "categoryHint": "Vergabe",
+      "tags": ["Vergabe", "Beschaffung", "Kommunale Auftragsvergabe"]
+    },
+    {
+      "id": "baymbl-rss",
+      "name": "Bayerisches Ministerialblatt",
+      "group": "Recht & Verwaltungsvorschriften",
+      "type": "rss",
+      "url": "https://www.verkuendung-bayern.de/service/rss-feed/baymbl-rss/list/",
+      "weight": 26,
+      "categoryHint": "Ministerien / Rundschreiben",
+      "tags": ["Bekanntmachung", "Richtlinie", "Verwaltungsvorschrift", "Förderung"]
+    },
+    {
+      "id": "gvbl-rss",
+      "name": "Bayerisches Gesetz- und Verordnungsblatt",
+      "group": "Recht & Verwaltungsvorschriften",
+      "type": "rss",
+      "url": "https://www.verkuendung-bayern.de/service/rss-feed/gvbl-rss/list/",
+      "weight": 28,
+      "categoryHint": "Landtag / Gesetze",
+      "tags": ["Gesetz", "Verordnung", "BayGO", "BayBO", "BayKAG"]
+    },
+    {
+      "id": "baymbl-html",
+      "name": "Veröffentlichungen im BayMBl.",
+      "group": "Recht & Verwaltungsvorschriften",
+      "type": "html",
+      "url": "https://www.verkuendung-bayern.de/baymbl/",
+      "weight": 24,
+      "categoryHint": "Ministerien / Rundschreiben",
+      "tags": ["Bekanntmachung", "Förderrichtlinie", "Haushalt", "Steuern"]
+    },
+    {
+      "id": "bayernrecht-rss",
+      "name": "Bayern.Recht – aktuelle Rechtsprechung",
+      "group": "Rechtsprechung",
+      "type": "html",
+      "url": "https://www.gesetze-bayern.de/Content/Document/Rss",
+      "weight": 18,
+      "categoryHint": "Rechtsprechung",
+      "tags": ["Gerichte", "Rechtsprechung", "Verwaltungsgericht"]
+    },
+    {
+      "id": "landtag-rss",
+      "name": "Bayerischer Landtag – RSS-Übersicht",
+      "group": "Landtag / Gesetze",
+      "type": "html",
+      "url": "https://www.bayern.landtag.de/parlament/dokumente/rss-feeds/",
+      "weight": 14,
+      "categoryHint": "Landtag / Gesetze",
+      "tags": ["Drucksachen", "Gesetzentwurf", "Antrag", "Ausschuss"]
+    },
+    {
+      "id": "landtag-presse",
+      "name": "Bayerischer Landtag – Pressemitteilungen",
+      "group": "Landtag / Gesetze",
+      "type": "html",
+      "url": "https://www.bayern.landtag.de/aktuelles/presse/pressemitteilungen/",
+      "weight": 10,
+      "categoryHint": "Landtag / Gesetze",
+      "tags": ["Landtag", "Ausschuss", "Gesetzgebung"]
+    },
+    {
+      "id": "stmfh-presse",
+      "name": "Bayerisches Finanzministerium – Pressemitteilungen",
+      "group": "Ministerien Bayern",
+      "type": "html",
+      "url": "https://www.stmfh.bayern.de/aktuelles/pressemitteilungen/",
+      "weight": 20,
+      "categoryHint": "Haushalt & Finanzen",
+      "tags": ["Finanzen", "Steuern", "Kommunaler Finanzausgleich", "Öffentlicher Dienst"]
+    },
+    {
+      "id": "stmd-presse",
+      "name": "Bayerisches Digitalministerium – Pressemitteilungen",
+      "group": "Ministerien Bayern",
+      "type": "html",
+      "url": "https://www.stmd.bayern.de/aktuelles/pressemitteilungen/",
+      "weight": 17,
+      "categoryHint": "Digitalisierung / BayernPortal / OZG",
+      "tags": ["Digitalisierung", "OZG", "BayernPortal", "Registermodernisierung"]
+    },
+    {
+      "id": "stmb-presse",
+      "name": "Bayerisches Bauministerium – Pressemitteilungen",
+      "group": "Ministerien Bayern",
+      "type": "html",
+      "url": "https://www.stmb.bayern.de/med/pressemitteilungen/",
+      "weight": 17,
+      "categoryHint": "Bauen & Planung",
+      "tags": ["Bau", "Planung", "Wohnraum", "Städtebauförderung", "BayBO"]
+    },
+    {
+      "id": "stmas-presse",
+      "name": "Bayerisches Sozialministerium – Pressemitteilungen",
+      "group": "Ministerien Bayern",
+      "type": "html",
+      "url": "https://www.stmas.bayern.de/presse/",
+      "weight": 14,
+      "categoryHint": "Soziales",
+      "tags": ["Soziales", "Kita", "Personal", "Arbeit"]
+    },
+    {
+      "id": "stmuv-presse",
+      "name": "Bayerisches Umweltministerium – Pressemitteilungen",
+      "group": "Ministerien Bayern",
+      "type": "html",
+      "url": "https://www.stmuv.bayern.de/aktuell/presse/index.htm",
+      "weight": 14,
+      "categoryHint": "Klima / Energie",
+      "tags": ["Klima", "Energie", "Umwelt", "Wasser", "Abfall"]
+    },
+    {
+      "id": "lfstat",
+      "name": "Bayerisches Landesamt für Statistik – Pressemitteilungen",
+      "group": "Daten & Statistik",
+      "type": "html",
+      "url": "https://www.statistik.bayern.de/presse/mitteilungen/",
+      "weight": 13,
+      "categoryHint": "Haushalt & Finanzen",
+      "tags": ["Statistik", "Kommunalfinanzen", "Bevölkerung", "Steuern"]
+    },
+    {
+      "id": "bkpv",
+      "name": "Bayerischer Kommunaler Prüfungsverband",
+      "group": "Kommunale Fachquellen",
+      "type": "html",
+      "url": "https://www.bkpv.de/veroeffentlichungen",
+      "weight": 24,
+      "categoryHint": "Haushalt & Finanzen",
+      "tags": ["Prüfung", "Haushalt", "Kasse", "Gebühren", "Kommunalunternehmen"]
+    },
+    {
+      "id": "gemeindetag-aktuell",
+      "name": "Bayerischer Gemeindetag – Aktuelles",
+      "group": "Kommunale Spitzenverbände",
+      "type": "html",
+      "url": "https://www.bay-gemeindetag.de/aktuelles",
+      "weight": 22,
+      "categoryHint": "Kommunalrecht",
+      "tags": ["Gemeinden", "Märkte", "Kommunalpolitik", "Satzung", "Haushalt"]
+    },
+    {
+      "id": "staedtetag",
+      "name": "Bayerischer Städtetag – Presse und Veröffentlichungen",
+      "group": "Kommunale Spitzenverbände",
+      "type": "html",
+      "url": "https://www.bay-staedtetag.de/presse-und-veroeffentlichungen/pressemitteilungen/downloadbereich",
+      "weight": 20,
+      "categoryHint": "Kommunalrecht",
+      "tags": ["Städte", "Gemeinden", "Finanzen", "Personal", "Daseinsvorsorge"]
+    },
+    {
+      "id": "landkreistag",
+      "name": "Bayerischer Landkreistag – Aktuelle Meldungen",
+      "group": "Kommunale Spitzenverbände",
+      "type": "html",
+      "url": "https://www.bay-landkreistag.de/aktuelles/aktuelle-meldungen/",
+      "weight": 20,
+      "categoryHint": "Kommunalrecht",
+      "tags": ["Landkreise", "Kreisumlage", "Soziales", "Krankenhäuser", "ÖPNV"]
+    },
+    {
+      "id": "bezirketag",
+      "name": "Bayerischer Bezirketag – Aktuelles",
+      "group": "Kommunale Spitzenverbände",
+      "type": "html",
+      "url": "https://www.bay-bezirketag.de/aktuelles/",
+      "weight": 12,
+      "categoryHint": "Soziales",
+      "tags": ["Bezirke", "Eingliederungshilfe", "Bezirksumlage", "Soziales"]
+    },
+    {
+      "id": "bayernportal",
+      "name": "BayernPortal",
+      "group": "Digitalisierung",
+      "type": "html",
+      "url": "https://www.bayernportal.de/",
+      "weight": 13,
+      "categoryHint": "Digitalisierung / BayernPortal / OZG",
+      "tags": ["Online-Dienste", "BayernID", "BayernPortal", "Behördenwegweiser"]
+    },
+    {
+      "id": "vergabe-bayern",
+      "name": "Vergabeplattform Bayern – Veröffentlichungen",
+      "group": "Vergabe",
+      "type": "html",
+      "url": "https://www.vergabe.bayern.de/veroeffentlichungen/index.html",
+      "weight": 18,
+      "categoryHint": "Vergabe",
+      "tags": ["Vergabe", "Ausschreibung", "VOB", "UVgO"]
+    },
+    {
+      "id": "baylfd-rss",
+      "name": "Bayerischer Landesbeauftragter für den Datenschutz – RSS",
+      "group": "Datenschutz",
+      "type": "html",
+      "url": "https://www.datenschutz-bayern.de/static/rss.html",
+      "weight": 18,
+      "categoryHint": "Datenschutz",
+      "tags": ["Datenschutz", "Behörde", "Kommune", "DSGVO"]
+    },
+    {
+      "id": "lda-bayern",
+      "name": "Bayerisches Landesamt für Datenschutzaufsicht",
+      "group": "Datenschutz",
+      "type": "html",
+      "url": "https://www.lda.bayern.de/de/thema.html",
+      "weight": 14,
+      "categoryHint": "Datenschutz",
+      "tags": ["Datenschutz", "DSGVO", "Aufsicht"]
+    },
+    {
+      "id": "foerderdatenbank",
+      "name": "Förderdatenbank des Bundes",
+      "group": "Förderprogramme",
+      "type": "html",
+      "url": "https://www.foerderdatenbank.de/FDB/DE/Foerderprogramme/foerderprogramme.html",
+      "weight": 16,
+      "categoryHint": "Förderprogramme",
+      "tags": ["Förderprogramm", "Kommune", "Frist", "Antrag"]
+    },
+    {
+      "id": "bmi-presse",
+      "name": "Bundesinnenministerium – Pressemitteilungen",
+      "group": "Bund",
+      "type": "html",
+      "url": "https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/pressemitteilungen-node.html",
+      "weight": 10,
+      "categoryHint": "Digitalisierung / BayernPortal / OZG",
+      "tags": ["OZG", "Registermodernisierung", "Kommunen", "Sicherheit"]
+    },
+    {
+      "id": "bmf-rss",
+      "name": "Bundesfinanzministerium – RSS",
+      "group": "Bund",
+      "type": "html",
+      "url": "https://www.bundesfinanzministerium.de/Web/DE/Service/Abonnements/Rss/rss.html",
+      "weight": 10,
+      "categoryHint": "Steuern & Abgaben",
+      "tags": ["Steuern", "Finanzen", "Grundsteuer", "Gewerbesteuer"]
+    },
+    {
+      "id": "destatis-presse",
+      "name": "Destatis – Pressemitteilungen",
+      "group": "Bund",
+      "type": "html",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/_inhalt.html",
+      "weight": 8,
+      "categoryHint": "Haushalt & Finanzen",
+      "tags": ["Statistik", "Kommunalfinanzen", "Bevölkerung", "Bauen"]
+    },
+    {
+      "id": "gesetze-internet-aktuell",
+      "name": "Gesetze im Internet – Aktualitätendienst",
+      "group": "Bund",
+      "type": "html",
+      "url": "https://www.gesetze-im-internet.de/aktuDienst.html",
+      "weight": 12,
+      "categoryHint": "Landtag / Gesetze",
+      "tags": ["Bundesrecht", "Gesetz", "Verordnung", "Frist"]
+    },
+    {
+      "id": "vka",
+      "name": "Vereinigung der kommunalen Arbeitgeberverbände",
+      "group": "Personal & Tarif",
+      "type": "html",
+      "url": "https://www.vka.de/pressemitteilungen",
+      "weight": 16,
+      "categoryHint": "Personal & Tarif",
+      "tags": ["TVöD", "Personal", "Tarif", "Kommunale Arbeitgeber"]
+    }
+  ]
+}
